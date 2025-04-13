@@ -23,7 +23,7 @@ export default function Navbar() {
         }}
       >
         <div className="d-flex align-items-center" style={{ gap: "100px" }}>
-          <Link href="/" className="transition-opacity duration-300 hover-opacity-70 d-none d-lg-block" style={{color:"var(--linkLightmode"}}>
+          <Link href="/" className="transition-opacity duration-300 hover-opacity-70 d-none d-lg-block" style={{color:"var(--linkLightmode)"}}>
             <Image src="/svg/Logo.svg" alt="7host-logo" width={76.16} height={18.24} />
           </Link>
 

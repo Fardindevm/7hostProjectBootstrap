@@ -15,8 +15,8 @@ export default function Home() {
       <About_the_app />
       <FeatureSection
         id="Feature1"
-        imageUrl="/images/image_20.png"
-        imageUrlDark="/images/image_20_dark.png"
+        imageUrl="/Images/image_20.png"
+        imageUrlDark="/Images/image_20_dark.png"
         imageAlt="image for workflow feature"
         title="Revolutionize your workflow"
         theme={theme}
@@ -24,8 +24,8 @@ export default function Home() {
       />
       <FeatureSection
         id="Feature2"
-        imageUrl="/images/image_21.png"
-        imageUrlDark="/images/image_21_dark.png"
+        imageUrl="/Images/image_21.png"
+        imageUrlDark="/Images/image_21_dark.png"
         imageAlt="second feature image"
         title="Free template library included"
         theme={theme}
@@ -34,8 +34,8 @@ export default function Home() {
       />
       <FeatureSection
         id="Feature3"
-        imageUrl="/images/image_22.png"
-        imageUrlDark="/images/image_22_dark.png"
+        imageUrl="/Images/image_22.png"
+        imageUrlDark="/Images/image_22_dark.png"
         imageAlt="third feature image"
         title="Used by teams from all over the globe"
         theme={theme}
