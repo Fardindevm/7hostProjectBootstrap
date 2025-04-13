@@ -1,0 +1,177 @@
+/* @import "tailwindcss"; */
+
+* {
+  scroll-behavior: smooth;
+}
+
+:root {
+  /* Light mode colors */
+  --background: #ffffff;
+  --navbarbg: #FAFBFFCC;
+  --navbarbb: #C8D7FF;
+  --textLightmode: #7E8186;
+  --atpText: #00006D;
+  --linkLightmode: #4C5D77;
+  --normalH1Lightmode: #4F4F4F;
+  --FAQTitleLightmode: #212121;
+  --FAQLightmode: #858383;
+  --FAQbgLightmode: #EDEDED;
+  --FAQborder: #E5E5EA;
+  --GetStarted: #BED0FF;
+  --GetStartedBg: brightness(0.7) contrast(3.0);
+  --currenciesList: #EDEDED;
+
+
+  /* Dark mode colors */
+  --DarkBackground: #222222;
+  --navbarDarkbg: #222222CC;
+  --navbarDarkbb: #383D49;
+  --textDarkmode: #C8CED6;
+  --atpTextDark: #CDCDFF;
+  --linkDarkmode: #81A2D2;
+  --normalH1Darkmode: #C1C1C1;
+  --FAQTitleDarkmode: #DDDDDD;
+  --FAQDarkmode: #A5A5A5;
+  --FAQbgDarkmode: #434343;
+  --FAQborderDark: #5C5C5C;
+  --GetStartedDark: #292B33;
+  --GetStartedBgDark: brightness(0.75) contrast(1.0);
+  --currenciesListDark: #c8c4c4;
+}
+
+.dark-mode {
+  --background: var(--DarkBackground);
+  --textLightmode: var(--textDarkmode);
+  --linkLightmode: var(--linkDarkmode);
+  --normalH1Lightmode: var(--normalH1Darkmode);
+  --FAQTitleLightmode: var(--FAQTitleDarkmode);
+  --FAQLightmode: var(--FAQDarkmode);
+  --FAQbgLightmode: var(--FAQbgDarkmode);
+  --navbarbg: var(--navbarDarkbg);
+  --navbarbb: var(--navbarDarkbb);
+  --atpText: var(--atpTextDark);
+  --FAQborder: var(--FAQborderDark);
+  --GetStarted: var(--GetStartedDark);
+  --GetStartedBg: var(--GetStartedBgDark);
+  --currenciesList: var(--currenciesListDark);
+}
+
+head, body {
+  overflow-x: hidden;
+}
+
+h1 {
+  font-weight: 800;
+}
+
+h2 {
+  font-weight: 700;
+}
+
+.slideshow-container {
+  height: 432px;
+}
+
+@media (max-width: 767px) {
+  .slideshow-container {
+    height: 302px !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .modal-container {
+    width: 752px !important;
+    height: 284px !important;
+  }
+
+  .price-text {
+    font-size: 40px !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .currency-container {
+    width: 752px !important;
+    height: 284px !important;
+  }
+
+  .currency-price {
+    font-size: 40px !important;
+  }
+}
+
+.modal-close-btn:hover {
+  background-color: rgba(13, 110, 253, 0.1);
+}
+
+@media (min-width: 992px) {
+  .name-column {
+    min-width: 187px;
+    width: 187px;
+    max-width: 450px;
+  }
+
+  .price-column {
+    min-width: 200px;
+    width: 200px;
+    max-width: 200px;
+  }
+
+  .date-column {
+    min-width: 201px;
+    width: 201px;
+    max-width: 201px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .slide-content {
+    max-width: 500px;
+  }
+
+  .responsive-title {
+    font-size: 28px !important;
+  }
+
+  .responsive-text {
+    font-size: 18px !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .slide-content {
+    max-width: 400px;
+  }
+
+  .responsive-title {
+    font-size: 24px !important;
+  }
+
+  .responsive-text {
+    font-size: 16px !important;
+  }
+}
+
+.shadow-orange {
+  box-shadow: -20px 24px 33px 0px rgba(255, 138, 55, 0.25);
+}
+
+.shadow-purple {
+  box-shadow: -20px 24px 33px 0px rgba(119, 55, 255, 0.25);
+}
+
+.hover-opacity:hover {
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+a {
+  text-decoration: none;
+  color: var(--linkLightmode);
+}
+
+button {
+  cursor: pointer;
+  font-weight: 700;
+  color: var(--linkLightmode);
+}
