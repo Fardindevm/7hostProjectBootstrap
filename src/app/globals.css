@@ -199,3 +199,36 @@ button {
   background-color: #65BBE5 !important;
   color: #4970d2 !important;
 }
+
+.feature-image {
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 990px) and (max-width: 1230px) {
+  .feature-image {
+    width: 450px !important;
+    height: 450px !important;
+  }
+  
+  .feature-image-container {
+    min-width: 450px !important;
+    min-height: 450px !important;
+    max-width: 450px !important;
+    max-height: 450px !important;
+  }
+}
+
+@media (min-width: 1230px) {
+  .feature-image {
+    width: "100%" !important;
+    height: "100%" !important;
+  }
+
+  .feature-image-container {
+    min-width: 528px !important;
+    min-height: 528px !important;
+    max-width: 528px !important;
+    max-height: 528px !important;
+  }
+}

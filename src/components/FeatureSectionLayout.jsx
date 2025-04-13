@@ -20,7 +20,7 @@ export default function FeatureSection({ id, imageUrl, imageUrlDark, title, them
         style={{ maxHeight: "624px" }}
       >
         <div
-          className={`position-relative overflow-hidden ${isReversed ? "shadow-orange" : "shadow-purple"}`}
+          className={`position-relative feature-image-container overflow-hidden ${isReversed ? "shadow-orange" : "shadow-purple"}`}
           style={{
             minWidth: "311px",
             minHeight: "311px",
@@ -35,17 +35,18 @@ export default function FeatureSection({ id, imageUrl, imageUrlDark, title, them
             alt={title + " feature image"}
             width={528}
             height={528}
-            className="img-fluid"
+            className="feature-image feature-image-container"
             style={{
               width: "100%",
               height: "100%",
+              maxWidth: "100%",
               objectFit: "cover",
               borderRadius: "256px",
               display: "block",
-
             }}
           />
         </div>
+
 
         <div className="d-flex flex-column gap-5" style={{ minWidth: "311px", maxWidth: "494px", maxHeight: "236px" }}>
           <div className="d-flex flex-column gap-4">
