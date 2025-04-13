@@ -9,7 +9,7 @@ export default function CurrenciesHeader() {
         minWidth: "375px",
         height: "532px",
         backgroundColor: "#DECBE9",
-        marginBottom: "0",
+        marginTop: "78px",
       }}
     >
       <div

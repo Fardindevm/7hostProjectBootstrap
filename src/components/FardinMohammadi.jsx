@@ -1,5 +1,5 @@
 "use client";
-import { motion } from "framer-motion";
+import { color, motion } from "framer-motion";
 import Link from "next/link";
 
 export default function FardinMohammadi() {
@@ -7,6 +7,7 @@ export default function FardinMohammadi() {
     <motion.span className="text-center fw-bold" style={{ fontSize: "16px" }}>
       <motion.span
         initial={{ display: "inline-block" }}
+        style={{color: "var(--FAQTitleLightmode)"}}
         whileHover={{
           transition: {
             staggerChildren: 0.1,

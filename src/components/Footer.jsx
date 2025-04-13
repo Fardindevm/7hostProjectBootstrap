@@ -29,13 +29,13 @@ export default function FooterComponent() {
                 <Link
                   key={text}
                   href={href}
-                  className="text-decoration-none fw-bold"
+                  className="text-decoration-none fw-bold hover-opacity"
                   style={{
                     color: "#4C5D77",
                     fontSize: "16px",
                     lineHeight: "24px",
-                    transition: "color 0.2s",
-                    "&:hover": { color: "#2563eb" },
+                    transition: "all 0.4s ease",
+                    color: "var(--linkLightmode)",
                   }}
                 >
                   {text}
@@ -48,13 +48,13 @@ export default function FooterComponent() {
                 <Link
                   key={text}
                   href="#"
-                  className="text-decoration-none fw-bold"
+                  className="text-decoration-none fw-bold hover-opacity"
                   style={{
                     color: "#4C5D77",
                     fontSize: "16px",
                     lineHeight: "24px",
-                    transition: "color 0.2s",
-                    "&:hover": { color: "#2563eb" },
+                    transition: "all 0.4s ease",
+                    color: "var(--linkLightmode)",
                   }}
                 >
                   {text}

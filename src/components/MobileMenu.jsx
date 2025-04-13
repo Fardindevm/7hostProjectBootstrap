@@ -19,7 +19,8 @@ export default function MobileMenu() {
           left: 0,
           right: 0,
           height: "80px",
-          backgroundColor: "rgba(250, 251, 255, 0.8)",
+          backgroundColor: "var(--navbarbg)",
+          borderBottom: "1px solid var(--navarbb)",
           zIndex: 99999,
         }}
       />
@@ -28,7 +29,7 @@ export default function MobileMenu() {
       <button
         aria-label="Close and open menu button"
         onClick={() => setIsOpen(!isOpen)}
-        className="position-fixed d-flex flex-column justify-content-center align-items-center"
+        className="position-fixed d-flex flex-column justify-content-center align-items-center get-started-btn"
         style={{
           width: "48px",
           height: "48px",
@@ -61,8 +62,9 @@ export default function MobileMenu() {
         />
       </button>
 
-      <div
+      <Link
         className="position-fixed"
+        href="/"
         style={{
           zIndex: 100000,
           top: "24px",
@@ -70,7 +72,7 @@ export default function MobileMenu() {
         }}
       >
         <Image src="/svg/Logo.svg" alt="7flow logo" width={80} height={20} />
-      </div>
+      </Link>
 
       <AnimatePresence>
         {isOpen && (
@@ -97,21 +99,19 @@ export default function MobileMenu() {
                 left: 0,
                 right: 0,
                 bottom: 0,
-                background: "linear-gradient(180deg, #FAFBFF 0%, rgba(145, 149, 164, 0.95) 100%)",
+                background: "var(--mobileMenuBg)",
               }}
             />
 
             {/* Menu content */}
-            <div className="position-relative z-1 d-flex flex-column min-vh-100 px-5 pt-34" style={{height: "95%", paddingTop: "110px"}}>
-            <div className="d-flex flex-column gap-4 custom-margin">
-            <Link
+            <div className="position-relative z-1 d-flex flex-column min-vh-100 px-5 pt-34" style={{ height: "95%", paddingTop: "110px" }}>
+              <div className="d-flex flex-column gap-4 custom-margin">
+                <Link
                   href="/#Feature1"
                   onClick={handleLinkClick}
-                  className="text-decoration-none fw-bold"
+                  className="text-decoration-none fw-bold hover-opacity"
                   style={{
                     color: "#4C5D77",
-                    transition: "opacity 300ms",
-                    "&:hover": { opacity: 0.7 },
                   }}
                 >
                   Pricing
@@ -119,11 +119,9 @@ export default function MobileMenu() {
                 <Link
                   href="/#How-it-works"
                   onClick={handleLinkClick}
-                  className="text-decoration-none fw-bold"
+                  className="text-decoration-none fw-bold hover-opacity"
                   style={{
                     color: "#4C5D77",
-                    transition: "opacity 300ms",
-                    "&:hover": { opacity: 0.7 },
                   }}
                 >
                   How it Works
@@ -131,11 +129,9 @@ export default function MobileMenu() {
                 <Link
                   href="/#faq"
                   onClick={handleLinkClick}
-                  className="text-decoration-none fw-bold"
+                  className="text-decoration-none fw-bold hover-opacity"
                   style={{
                     color: "#4C5D77",
-                    transition: "opacity 300ms",
-                    "&:hover": { opacity: 0.7 },
                   }}
                 >
                   FAQ
@@ -143,11 +139,9 @@ export default function MobileMenu() {
                 <Link
                   href="/currencies"
                   onClick={handleLinkClick}
-                  className="text-decoration-none fw-bold"
+                  className="text-decoration-none fw-bold hover-opacity"
                   style={{
                     color: "#08C056",
-                    transition: "opacity 300ms",
-                    "&:hover": { opacity: 0.7 },
                   }}
                 >
                   Currencies
@@ -157,11 +151,11 @@ export default function MobileMenu() {
               <div className="d-flex flex-column mt-auto mb-8 gap-3">
                 <Link href="/" onClick={handleLinkClick} className="w-100">
                   <button
-                    className="w-100 py-3 rounded-pill fw-semibold border-0"
+                    className="w-100 py-3 rounded-pill fw-semibold border-0 get-started-btn"
                     style={{
                       backgroundColor: "#2140D4",
                       color: "white",
-                      transition: "background-color 300ms",
+                      transition: "background-color 400ms",
                       "&:hover": { backgroundColor: "rgba(33, 64, 212, 0.8)" },
                     }}
                   >
@@ -170,7 +164,7 @@ export default function MobileMenu() {
                 </Link>
                 <Link href="/" onClick={handleLinkClick} className="w-100">
                   <button
-                    className="w-100 py-3 bg-transparent border-0"
+                    className="w-100 py-3 bg-transparent border-0 hover-opacity"
                     style={{
                       color: "#4B5563",
                       transition: "opacity 300ms",

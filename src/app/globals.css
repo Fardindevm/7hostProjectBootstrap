@@ -20,6 +20,8 @@
   --GetStarted: #BED0FF;
   --GetStartedBg: brightness(0.7) contrast(3.0);
   --currenciesList: #EDEDED;
+  --ScheduleButtonBorder: none;
+  --mobileMenuBg: linear-gradient(180deg, #FAFBFF 0%, rgba(145, 149, 164, 0.95) 100%);
 
 
   /* Dark mode colors */
@@ -37,6 +39,8 @@
   --GetStartedDark: #292B33;
   --GetStartedBgDark: brightness(0.75) contrast(1.0);
   --currenciesListDark: #c8c4c4;
+  --ScheduleButtonBorderDark: 1px solid #60677A;
+  --mobileMenuBgDark: linear-gradient(180deg, #1a1a2e 0%, rgba(26, 26, 46, 0.95) 100%);
 }
 
 .dark-mode {
@@ -54,9 +58,12 @@
   --GetStarted: var(--GetStartedDark);
   --GetStartedBg: var(--GetStartedBgDark);
   --currenciesList: var(--currenciesListDark);
+  --ScheduleButtonBorder: var(--ScheduleButtonBorderDark);
+  --mobileMenuBg: var(--mobileMenuBgDark)
 }
 
-head, body {
+head,
+body {
   overflow-x: hidden;
 }
 
@@ -160,9 +167,9 @@ h2 {
   box-shadow: -20px 24px 33px 0px rgba(119, 55, 255, 0.25);
 }
 
-.hover-opacity:hover {
+.hover-opacity:hover , .get-started:hover {
   opacity: 0.7;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.5s ease;
 }
 
 a {
@@ -174,4 +181,21 @@ button {
   cursor: pointer;
   font-weight: 700;
   color: var(--linkLightmode);
+}
+
+.get-started {
+  position: static;
+  margin-bottom: 65px;
+}
+
+@media (min-width: 768px) {
+  .get-started {
+    position: absolute;
+    right: 40px;
+    bottom: -120px;
+  }
+}
+.get-started-btn:hover {
+  background-color: #65BBE5 !important;
+  color: #4970d2 !important;
 }

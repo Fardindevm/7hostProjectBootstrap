@@ -32,7 +32,7 @@ export default function GetStartedComponent() {
         <div
           className="position-relative d-flex flex-column justify-content-center px-3 px-md-5 text-white"
           style={{
-            top: "118px",
+            marginTop: "118px",
             minHeight: "196px",
             "@media (minWidth: 768px)": {
               left: "20px",
@@ -68,7 +68,7 @@ export default function GetStartedComponent() {
             </div>
 
             <button
-              className="position-absolute d-flex align-items-center justify-content-center gap-3 mx-auto ms-md-auto"
+              className="get-started d-flex align-items-center justify-content-center gap-3 mx-auto ms-md-auto"
               style={{
                 backgroundColor: "#08C056",
                 minWidth: "331px",
@@ -77,13 +77,6 @@ export default function GetStartedComponent() {
                 padding: "16px 32px",
                 borderRadius: "48px",
                 border: "none",
-                right: "40px",
-                bottom: "-60px",
-                "@media (minWidth: 768px)": {
-                  position: "absolute",
-                  bottom: "0",
-                  right: "0",
-                },
               }}
             >
               <span

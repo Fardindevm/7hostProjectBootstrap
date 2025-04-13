@@ -11,10 +11,11 @@ const publicSans = Public_Sans({
 export default function Hero() {
   return (
     <div
-      className="d-flex flex-column flex-lg-row align-items-center justify-content-center mt-3 mt-lg-5 px-4 px-lg-0 gap-5 py-3 py-lg-5"
+      className="d-flex flex-column flex-lg-row align-items-center justify-content-center mt-lg-5 px-4 px-lg-0 gap-5 py-3 py-lg-5"
       style={{
         minWidth: "375px",
         width: "auto",
+        marginTop: "78px"
       }}
     >
       <div className="d-flex flex-column gap-5" style={{ minWidth: "311px", maxWidth: "576px" }}>
@@ -42,10 +43,10 @@ export default function Hero() {
           </p>
         </div>
 
-        <div className="d-flex flex-column align-items-center flex-lg-row gap-3 w-100" style={{ maxWidth: "80%", margin: "0 auto" }}>
+        <div className="d-flex flex-column align-items-center flex-lg-row gap-3 w-100 " style={{ maxWidth: "80%", margin: "0 auto" }}>
           <Link
             href="/"
-            className="rounded-pill d-block text-decoration-none"
+            className="rounded-pill d-block text-decoration-none hover-opacity"
             style={{
               maxWidth: "478px",
               width: "223px",
@@ -54,14 +55,14 @@ export default function Hero() {
               backgroundColor: "#08C056",
             }}
           >
-            <button className="d-flex align-items-center justify-content-between w-100 border-0 bg-transparent p-0 cursor-pointer">
+            <button className="d-flex align-items-center justify-content-between w-100 border-0 bg-transparent p-0 cursor-pointer hover-opacity">
               <span className="text-white fw-bold hover-opacity">Get Started</span>
               <Image
                 src="/svg/Go-forward.svg" alt="Go-forward-for-button"
                 width={16}
                 height={16}
                 className="hover-opacity"
-                />
+              />
             </button>
           </Link>
 
@@ -78,38 +79,44 @@ export default function Hero() {
               "&:hover": {
                 backgroundColor: "rgba(190, 208, 255, 0.6)",
               },
-              border: "1px solid #60677A"
+              border: "var(--ScheduleButtonBorder)"
             }}
           >
-            <button className="border-0 bg-transparent p-0 cursor-pointer w-100 fw-bold text-primary hover-text" >
+            <button
+              className="border-0 bg-transparent p-0 cursor-pointer w-100 fw-bold text-primary hover-opacity"
+              style={{
+                transition: "opacity 0.3s ease"
+              }}
+            >
               Schedule a Demo
             </button>
+
           </Link>
         </div>
       </div>
 
       <div className="position-relative" style={{ left: "16.29px" }}>
-        <Image src="/Images/Illustration.png" alt="Illustration" width={550} height={379} priority={true} 
-        style={{
-          width: "100%",
-          height: "auto",
-          maxWidth: "750px",
-          maxHeight: "500px",
-          objectFit: "cover",
-          "@media (minWidth: 768px)": {
-            maxWidth: "460px",
-            maxHeight: "330px",
-            objectFit: "contain",
-          },
-          "@media (minWidth: 992px)": {
-            maxWidth: "650px",
+        <Image src="/Images/Illustration.png" alt="Illustration" width={550} height={379} priority={true}
+          style={{
+            width: "100%",
+            height: "auto",
+            maxWidth: "750px",
             maxHeight: "500px",
-          },
-          "@media (minWidth: 1200px)": {
-            marginLeft: "40px",
-            transform: "scale(1.4)",
-          },
-        }}/>
+            objectFit: "cover",
+            "@media (minWidth: 768px)": {
+              maxWidth: "460px",
+              maxHeight: "330px",
+              objectFit: "contain",
+            },
+            "@media (minWidth: 992px)": {
+              maxWidth: "650px",
+              maxHeight: "500px",
+            },
+            "@media (minWidth: 1200px)": {
+              marginLeft: "40px",
+              transform: "scale(1.4)",
+            },
+          }} />
       </div>
     </div>
   );
