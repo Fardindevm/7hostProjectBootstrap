@@ -83,8 +83,8 @@ export default function Slideshow() {
         <div className="col-11 col-md-12 col-lg-10">
           {/* Mobile Header */}
           <div className="d-md-none mb-4">
-            <h2 className="fs-1 mb-3" style={{ fontWeight: "900" }}>{slides[current].title}</h2>
-            <p className="fs-3">{slides[current].description}</p>
+            <h2 className="fs-1 mb-3" style={{ fontWeight: "900", color: "var(--normalH1Lightmode)" }}>{slides[current].title}</h2>
+            <p className="fs-3" style={{color: "var(--textLightmode)"}}>{slides[current].description}</p>
           </div>
 
           {/* Slideshow Container */}
